@@ -9,7 +9,7 @@ class Ball:
         self.height = height
         self.vel = vel
 
-    def create(self, x, y, width, height, vel, balls):
+    def draw(self, x, y, width, height, vel, balls):
         keys_pressed = pygame.key.get_pressed()
         if keys_pressed[pygame.K_UP] or keys_pressed[pygame.K_w]:
             ball = Ball(x, y, width, height, vel)

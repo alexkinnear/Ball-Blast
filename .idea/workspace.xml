@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bed5780-1772-4b13-adcc-87e10dabb49f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/imgs/rock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ball-blast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ball-blast.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cannon.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cannon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rock.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ball-blast.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ball-blast.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +26,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1f3ocnXezOJu5gkcDPb7X41bCBW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
@@ -79,39 +86,46 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1419" height="223" key="GridCell.Tab.0.bottom" timestamp="1595826718639">
+    <state x="433" y="244" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595828144015">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="433" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.822@0.23.1440.822" timestamp="1595828144015" />
+    <state width="1418" height="223" key="GridCell.Tab.0.bottom" timestamp="1595886129748">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1419" height="210" key="GridCell.Tab.0.bottom/0.23.1440.784@0.23.1440.784" timestamp="1595790584303" />
-    <state width="1419" height="223" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1595826718639" />
+    <state width="1418" height="223" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1595886129748" />
     <state width="1419" height="199" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1595543136434" />
     <state width="1555" height="199" key="GridCell.Tab.0.bottom/0.23.2560.1484@0.23.2560.1484" timestamp="1595534355024" />
     <state width="1555" height="199" key="GridCell.Tab.0.bottom/0.23.2560.1486@0.23.2560.1486" timestamp="1595534370254" />
     <state width="930" height="199" key="GridCell.Tab.0.bottom/0.23.2560.1489@0.23.2560.1489" timestamp="1595530416208" />
-    <state width="1419" height="223" key="GridCell.Tab.0.center" timestamp="1595826718639">
+    <state width="1418" height="223" key="GridCell.Tab.0.center" timestamp="1595886129748">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1419" height="210" key="GridCell.Tab.0.center/0.23.1440.784@0.23.1440.784" timestamp="1595790584302" />
-    <state width="1419" height="223" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1595826718639" />
+    <state width="1418" height="223" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1595886129748" />
     <state width="1419" height="199" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1595543136433" />
     <state width="1555" height="199" key="GridCell.Tab.0.center/0.23.2560.1484@0.23.2560.1484" timestamp="1595534355023" />
     <state width="1555" height="199" key="GridCell.Tab.0.center/0.23.2560.1486@0.23.2560.1486" timestamp="1595534370253" />
     <state width="930" height="199" key="GridCell.Tab.0.center/0.23.2560.1489@0.23.2560.1489" timestamp="1595530416207" />
-    <state width="1419" height="223" key="GridCell.Tab.0.left" timestamp="1595826718638">
+    <state width="1418" height="223" key="GridCell.Tab.0.left" timestamp="1595886129747">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1419" height="210" key="GridCell.Tab.0.left/0.23.1440.784@0.23.1440.784" timestamp="1595790584302" />
-    <state width="1419" height="223" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1595826718638" />
+    <state width="1418" height="223" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1595886129747" />
     <state width="1419" height="199" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1595543136432" />
     <state width="1555" height="199" key="GridCell.Tab.0.left/0.23.2560.1484@0.23.2560.1484" timestamp="1595534355023" />
     <state width="1555" height="199" key="GridCell.Tab.0.left/0.23.2560.1486@0.23.2560.1486" timestamp="1595534370253" />
     <state width="930" height="199" key="GridCell.Tab.0.left/0.23.2560.1489@0.23.2560.1489" timestamp="1595530416207" />
-    <state width="1419" height="223" key="GridCell.Tab.0.right" timestamp="1595826718639">
+    <state width="1418" height="223" key="GridCell.Tab.0.right" timestamp="1595886129748">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1419" height="210" key="GridCell.Tab.0.right/0.23.1440.784@0.23.1440.784" timestamp="1595790584303" />
-    <state width="1419" height="223" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1595826718639" />
+    <state width="1418" height="223" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1595886129748" />
     <state width="1419" height="199" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1595543136433" />
     <state width="1555" height="199" key="GridCell.Tab.0.right/0.23.2560.1484@0.23.2560.1484" timestamp="1595534355024" />
     <state width="1555" height="199" key="GridCell.Tab.0.right/0.23.2560.1486@0.23.2560.1486" timestamp="1595534370254" />

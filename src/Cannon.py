@@ -11,10 +11,10 @@ class Cannon:
         self.fire_rate = fire_rate
         self.fire_power = fire_power
 
-    def create(self, dis, x, y, width, height):
+    def create(self, dis):
         image = pygame.image.load("imgs/cannon.png")
-        cannon = pygame.transform.scale(image, (width, height))
-        dis.blit(cannon, (x, y))
+        cannon = pygame.transform.scale(image, (self.width, self.height))
+        dis.blit(cannon, (self.x, self.y))
 
     def move(self, cannon, dis_width):
         keys_pressed = pygame.key.get_pressed()

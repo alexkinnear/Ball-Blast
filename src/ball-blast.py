@@ -1,11 +1,10 @@
 import pygame
-import random
 
 from Cannon import Cannon
 from Ball import Ball
+from Rock import Rock
 
 pygame.init()
-
 
 # ------ Display ------
 dis_width = 800
@@ -24,11 +23,15 @@ dis.blit(background, (0, 0))
 
 # ------ Cannon ------
 cannon = Cannon(340, 500, 100, 100, 25, 5, 2)
-cannon.create(dis, cannon.x, cannon.y, cannon.width, cannon.height)
+cannon.create(dis)
 
 # ------Cannon Ball ------
-cannon_ball = Ball(cannon.x + cannon.width/7, cannon.y - cannon.height/7, 70, 40, 30)
+cannon_ball = Ball(cannon.x + cannon.width / 7, cannon.y - cannon.height / 7, 70, 40, 30)
 balls = []
+
+# ------ Rock ------
+rock = Rock(100, 100, 100, 5, 20)
+
 
 def gameLoop():
     running = True
@@ -39,12 +42,13 @@ def gameLoop():
 
         cannon.move(cannon, dis_width)
         dis.blit(background, (0, 0))
-        cannon.create(dis, cannon.x, cannon.y, cannon.width, cannon.height)
-        cannon_ball.create(cannon.x + cannon.width/7, cannon.y - cannon.height/7, cannon_ball.width, cannon_ball.height, cannon_ball.vel, balls)
+        cannon.create(dis)
+        cannon_ball.draw(cannon.x + cannon.width / 7, cannon.y - cannon.height / 7, cannon_ball.width,
+                         cannon_ball.height, cannon_ball.vel, balls)
         cannon_ball.show(dis, cannon_ball.width, cannon_ball.height, balls)
+        rock.draw(dis)
         pygame.display.update()
         clock.tick(fps)
-
 
 
 gameLoop()
