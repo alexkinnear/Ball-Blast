@@ -15,7 +15,7 @@ pygame.display.set_caption("Ball Blast")
 dis.fill((255, 255, 255))
 
 clock = pygame.time.Clock()
-fps = 60
+fps = 120
 
 # ------ Background ------
 img = pygame.image.load("imgs/background.jpg")
@@ -27,7 +27,8 @@ cannon = Cannon(340, 500, 100, 100, 25, 5, 2)
 cannon.create(dis, cannon.x, cannon.y, cannon.width, cannon.height)
 
 # ------Cannon Ball ------
-cannon_ball = Ball(cannon.x + cannon.width/7, cannon.y - cannon.height/7, 70, 40, 5)
+cannon_ball = Ball(cannon.x + cannon.width/7, cannon.y - cannon.height/7, 70, 40, 30)
+balls = []
 
 def gameLoop():
     running = True
@@ -39,7 +40,8 @@ def gameLoop():
         cannon.move(cannon, dis_width)
         dis.blit(background, (0, 0))
         cannon.create(dis, cannon.x, cannon.y, cannon.width, cannon.height)
-        cannon_ball.create(dis, cannon.x + cannon.width/7, cannon.y - cannon.height/7, cannon_ball.width, cannon_ball.height, cannon_ball.vel)
+        cannon_ball.create(cannon.x + cannon.width/7, cannon.y - cannon.height/7, cannon_ball.width, cannon_ball.height, cannon_ball.vel, balls)
+        cannon_ball.show(dis, cannon_ball.width, cannon_ball.height, balls)
         pygame.display.update()
         clock.tick(fps)
 
