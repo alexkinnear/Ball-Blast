@@ -30,7 +30,7 @@ cannon_ball = Ball(cannon.x + cannon.width / 7, cannon.y - cannon.height / 7, 70
 balls = []
 
 # ------ Rock ------
-rock = Rock(100, 100, 100, 5, 20)
+rock = Rock(100, 100, 100, 5, 20, 'DOWN')
 rocks = []
 
 
@@ -47,9 +47,10 @@ def gameLoop():
         cannon_ball.create(cannon.x + cannon.width / 7, cannon.y - cannon.height / 7, cannon_ball.width,
                          cannon_ball.height, cannon_ball.vel, balls)
         cannon_ball.show(dis, cannon_ball.width, cannon_ball.height, balls)
-        rock.hit(balls, rocks)
+        rock.hit(balls, rocks, cannon.fire_power)
         rock.create(rocks, dis_width)
         rock.draw(dis, rocks)
+        rock.movement(dis_width, dis_height, rocks)
         pygame.display.update()
         clock.tick(fps)
 
