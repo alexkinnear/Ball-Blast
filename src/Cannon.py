@@ -26,6 +26,12 @@ class Cannon:
                 cannon.x += cannon.vel
         pygame.display.update()
 
+    def hit(self, dis, rocks):
+        for rock in rocks:
+            if rock.x + rock.width > self.x and rock.x < self.x + self.width:
+                if rock.y + rock.width > self.y:
+                    return True
+        return False
 
 
 

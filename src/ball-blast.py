@@ -51,6 +51,8 @@ def gameLoop():
         rock.create(rocks, dis_width)
         rock.draw(dis, rocks)
         rock.movement(dis_width, dis_height, rocks)
+        if cannon.hit(dis, rocks):
+            running = False
         pygame.display.update()
         clock.tick(fps)
 
