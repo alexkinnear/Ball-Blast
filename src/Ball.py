@@ -9,7 +9,7 @@ class Ball:
         self.height = height
         self.vel = vel
 
-    def draw(self, x, y, width, height, vel, balls):
+    def create(self, x, y, width, height, vel, balls):
         keys_pressed = pygame.key.get_pressed()
         if keys_pressed[pygame.K_UP] or keys_pressed[pygame.K_w]:
             ball = Ball(x, y, width, height, vel)
@@ -17,7 +17,9 @@ class Ball:
 
     def show(self, dis, width, height, balls):
         image = pygame.image.load("imgs/cannon-ball.png")
-        for cb in balls:
+        for i, cb in enumerate(balls):
             cb.y -= cb.vel
             cannon_ball = pygame.transform.scale(image, (width, height))
             dis.blit(cannon_ball, (cb.x, cb.y))
+            if cb.y < 0:
+                balls.pop(i)

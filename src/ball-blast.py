@@ -14,7 +14,7 @@ pygame.display.set_caption("Ball Blast")
 dis.fill((255, 255, 255))
 
 clock = pygame.time.Clock()
-fps = 120
+fps = 360
 
 # ------ Background ------
 img = pygame.image.load("imgs/background.jpg")
@@ -31,6 +31,7 @@ balls = []
 
 # ------ Rock ------
 rock = Rock(100, 100, 100, 5, 20)
+rocks = []
 
 
 def gameLoop():
@@ -43,10 +44,12 @@ def gameLoop():
         cannon.move(cannon, dis_width)
         dis.blit(background, (0, 0))
         cannon.create(dis)
-        cannon_ball.draw(cannon.x + cannon.width / 7, cannon.y - cannon.height / 7, cannon_ball.width,
+        cannon_ball.create(cannon.x + cannon.width / 7, cannon.y - cannon.height / 7, cannon_ball.width,
                          cannon_ball.height, cannon_ball.vel, balls)
         cannon_ball.show(dis, cannon_ball.width, cannon_ball.height, balls)
-        rock.draw(dis)
+        rock.hit(balls, rocks)
+        rock.create(rocks, dis_width)
+        rock.draw(dis, rocks)
         pygame.display.update()
         clock.tick(fps)
 
